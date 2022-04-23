@@ -1,0 +1,36 @@
+create table user_account(user_id number(6) primary key,username varchar(30),email varchar(30),password varchar(30),phone_no number(10),address varchar(30));
+
+insert into user_account values(10001,'Ryan Mathew','ryanmathew@gmail.com','ryan@123',741852963,'Banglore');
+
+insert into user_account values(10002,'prithvi raj','prithviraj@gmail.com','prithvi@123',753152963,'Kota');
+
+insert into user_account values(10003,'Yuvraj ','yuvraj@gmail.com','yuvraj@123',789654123,'Udaipur');
+
+insert into user_account values(10004,'Abhay ','abhay@gmail.com','abhay@123',987654321,'Delhi');
+
+insert into user_account values(10005,'Harsh ','harsh@gmail.com','harsh@123',753159246,'Chittorgarh');
+
+insert into user_account values(10006,'Jose ','jose@gmail.com','jose@123',741258963,'Kottayam');
+
+insert into user_account values(10007,'Ruchi ','ruchi@gmail.com','ruchi@123',654123987,'Pune');
+
+insert into user_account values(10008,'Piyush ','piyush@gmail.com','piyush@123',741963852,'Jaipur');
+
+create table movies (movie_id number(6) primary key, mname varchar(30),rdate date, rating number(5,2),description varchar(20));
+
+insert into movies values(5001,'Men in Black',TO_DATE('1997.07.02','YYYY.MM.DD'),8.2,'AAAA BBBB');
+
+insert into movies values(5002,'Tick..Tick... Boom',TO_DATE('2021.10.14','YYYY.MM.DD'),9.1,'CCCC BBBB');
+
+insert into movies values(5003,'The Dig',TO_DATE('2021.07.14','YYYY.MM.DD'),7.8,'CCCC AAAA');
+
+insert into movies values(5004,'The Platform',TO_DATE('2019.08.05','YYYY.MM.DD'),8.4,'DDDD AAAA');
+
+insert into movies values(5005,'Extration',TO_DATE('2019.03.10','YYYY.MM.DD'),8.9,'DDDD CCCC');
+
+insert into movies values(5006,'Enola Homes',TO_DATE('2019.12.10','YYYY.MM.DD'),9.5,'DDDD BBBB');
+
+insert into movies values(5007,'Naruto',TO_DATE('2006.08.10','YYYY.MM.DD'),10,'EEEE BBBB');
+
+insert into movies values(5008,'Horror Story',TO_DATE('2015.08.21','YYYY.MM.DD'),9.2,'HHHH BBBB');
+

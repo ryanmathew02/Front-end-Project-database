@@ -1,0 +1,36 @@
+alter table payment
+add constraint fk_payment
+foreign key(user_id) references user_account(user_id);
+
+alter table watched
+add constraint fk_watched1
+foreign key(user_id) references user_account(user_id);
+
+alter table payment
+add constraint fk_payment1
+foreign key(sub_id) references subcription;
+
+alter table watched
+add constraint fk_watched
+foreign key(movie_id) references movies(movie_id);
+
+alter table genre_type
+add constraint fk_genre_type1
+foreign key(movie_id) references movies(movie_id);
+
+alter table language
+add constraint fk_language
+foreign key(movie_id) references movies(movie_id);
+
+alter table movie_actors
+add constraint fk_movie_actors
+foreign key(movie_id) references movies(movie_id);
+
+
+alter table genre_type
+add constraint fk_genre_type
+foreign key(id) references genre_name(id);
+
+alter table movie_actors
+add constraint fk_movie_actors2
+foreign key(actor_id) references actor(actor_id);

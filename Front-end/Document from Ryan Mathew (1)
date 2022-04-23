@@ -1,0 +1,127 @@
+create table movie_actors(movie_id number(6), actor_id number(6));
+
+insert into movie_actors values(5001,30001);
+
+insert into movie_actors values(5001,30002);
+
+insert into movie_actors values(5002,30003);
+
+insert into movie_actors values(5002,30004);
+
+insert into movie_actors values(5003,30005);
+
+insert into movie_actors values(5003,30006);
+
+insert into movie_actors values(5004,30007);
+
+insert into movie_actors values(5004,30008);
+
+insert into movie_actors values(5007,30009);
+
+create table actor(actor_id number(6) primary key,name varchar(20),dob date);
+
+insert into actor values(30001,'Will Smith',TO_DATE('1985.12.19','YYYY.MM.DD'));
+
+insert into actor values(30002,'Tommey Lee Jones',TO_DATE('1965.12.19','YYYY.MM.DD'));
+
+insert into actor values(30003,'Andrew Grafield',TO_DATE('1965.09.19','YYYY.MM.DD'));
+
+insert into actor values(30004,'Vanessa Hudgens',TO_DATE('1990.01.10','YYYY.MM.DD'));
+
+insert into actor values(30005,'Lily James',TO_DATE('1998.03.18','YYYY.MM.DD'));
+
+insert into actor values(30006,'Ralph Fiennes',TO_DATE('2002.12.18','YYYY.MM.DD'));
+
+insert into actor values(30007,'Alexandra Masangkar',TO_DATE('2000.11.25','YYYY.MM.DD'));
+
+insert into actor values(30008,'Ivan Massaque',TO_DATE('1996.11.25','YYYY.MM.DD'));
+
+insert into actor values(30009,'Naruto Uzumaki',TO_DATE('2006.11.25','YYYY.MM.DD'));
+
+create table genre_name(id number(6) primary key, type varchar(20));
+
+insert into genre_name values(1,'comedy');
+
+insert into genre_name values(3,'drama');
+
+insert into genre_name values(2,'action');
+
+insert into genre_name values(4,'history');
+
+insert into genre_name values(5,'musical');
+
+insert into genre_name values(6,'thriller');
+
+insert into genre_name values(7,'mystery');
+
+insert into genre_name values(8,'adventure');
+
+insert into genre_name values(9,'horror');
+
+insert into genre_name values(10,'anime');
+
+insert into genre_name values(11,'sci-fic');
+
+create table genre_type (movie_id number(6),id number(6));
+
+insert into genre_type values(5001,1);
+
+insert into genre_type values(5001,2);
+
+insert into genre_type values(5002,3);
+
+insert into genre_type values(5002,5);
+
+insert into genre_type values(5003,3);
+
+insert into genre_type values(5003,4);
+
+insert into genre_type values(5004,6);
+
+insert into genre_type values(5004,11);
+
+insert into genre_type values(5005,2);
+
+insert into genre_type values(5005,6);
+
+insert into genre_type values(5006,7);
+
+insert into genre_type values(5006,8);
+
+insert into genre_type values(5007,8);
+
+insert into genre_type values(5007,1);
+
+insert into genre_type values(5007,10);
+
+insert into genre_type values(5008,9);
+
+insert into genre_type values(5008,6);
+
+create table language (movie_id number(6),lang varchar(20));
+
+insert into language values(5001,'english');
+
+insert into language values(5002,'english');
+
+insert into language values(5003,'english');
+
+insert into language values(5004,'english');
+
+insert into language values(5005,'english');
+
+insert into language values(5006,'english');
+
+insert into language values(5007,'english');
+
+insert into language values(5008,'hindi');
+
+insert into language values(5001,'hindi');
+
+insert into language values(5005,'hindi');
+
+insert into language values(5007,'japanese');
+
+
+
+

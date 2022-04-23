@@ -1,0 +1,50 @@
+create table payment (pay_id number(6) primary key,user_id number(6),pmode varchar(20),pdate date,sub_id number(6));
+
+insert into payment values(123456,10001,'net banking',TO_DATE('2020.10.12','YYYY.MM.DD'),204);
+
+insert into payment values(123789,10001,'net banking',TO_DATE('2020.08.16','YYYY.MM.DD'),204);
+
+insert into payment values(123963,10002,'UPI',TO_DATE('2021.09.18','YYYY.MM.DD'),203);
+
+insert into payment values(123852,10003,'card',TO_DATE('2021.12.23','YYYY.MM.DD'),201);
+
+insert into payment values(123741,10004,'card',TO_DATE('2019.12.23','YYYY.MM.DD'),202);
+
+insert into payment values(456123,10005,'net banking',TO_DATE('2019.01.23','YYYY.MM.DD'),203);
+
+insert into payment values(456789,10006,'UPI',TO_DATE('2021.01.23','YYYY.MM.DD'),201);
+
+insert into payment values(456741,10007,'UPI',TO_DATE('2021.06.30','YYYY.MM.DD'),204);
+
+create table subcription (sub_id number(6) primary key,s_type varchar(9),amount number(6));
+
+insert into subcription values(201,'HD',500);
+
+insert into subcription values(202,'FHD',700);
+
+insert into subcription values(203,'FHD+',1000);
+
+insert into subcription values(204,'UHD',1300);
+
+create table watched(user_id number(6),movie_id number(6));
+
+insert into watched values( 10001,5001);
+
+insert into watched values( 10001,5002);
+
+insert into watched values( 10001,5004);
+
+insert into watched values( 10002,5006);
+
+insert into watched values( 10002,5008);
+
+insert into watched values( 10002,5001);
+
+insert into watched values( 10002,5003);
+
+insert into watched values( 10003,5003);
+
+insert into watched values( 10003,5004);
+
+insert into watched values( 10003,5005);
+
